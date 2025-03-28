@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/aqua"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="485dp"
+        android:layout_height="423dp"
+        tools:layout_editor_absoluteX="462dp"
+        tools:layout_editor_absoluteY="142dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="744dp"
+        android:layout_height="101dp"
+        android:textSize="34dp"
+        android:textColor="@color/black"
+        android:text="@string/loading"
+        tools:layout_editor_absoluteX="209dp"
+        tools:layout_editor_absoluteY="836dp" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

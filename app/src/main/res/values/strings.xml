@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Chuka Uni</string>
+    <string name="login">Login Here</string>
+    <string name="register">Register</string>
+    <string name="loading">loading please wait..</string>
+    <string name="web">visit our website</string>
+    <string name="call">make call</string>
+    <string name="map">visit us on map</string>
+</resources>

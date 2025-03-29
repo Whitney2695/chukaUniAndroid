@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:background="@color/pink"
     android:orientation="vertical"
+    android:gravity="center"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.chukauni.Register">
@@ -12,6 +13,8 @@
     <Button
         android:id="@+id/btnweb"
         android:layout_width="match_parent"
+        android:padding="16dp"
+        android:textSize="18sp"
         android:layout_height="wrap_content"
         android:text="@string/web"
         tools:layout_editor_absoluteX="156dp"
@@ -20,6 +23,8 @@
     <Button
         android:id="@+id/btncall"
         android:layout_width="match_parent"
+        android:padding="16dp"
+        android:textSize="18sp"
         android:layout_height="wrap_content"
         android:text="@string/call"
         tools:layout_editor_absoluteX="156dp"
@@ -28,6 +33,8 @@
     <Button
         android:id="@+id/btnmap"
         android:layout_width="match_parent"
+        android:padding="16dp"
+        android:textSize="18sp"
         android:layout_height="wrap_content"
         android:text="@string/map"
         tools:layout_editor_absoluteX="156dp"
@@ -36,6 +43,8 @@
     <Button
         android:id="@+id/btncourse"
         android:layout_width="match_parent"
+        android:padding="16dp"
+        android:textSize="18sp"
         android:layout_height="wrap_content"
         android:text="@string/courses"
         tools:layout_editor_absoluteX="156dp"

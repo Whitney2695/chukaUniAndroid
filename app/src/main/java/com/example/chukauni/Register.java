@@ -46,7 +46,10 @@ public class Register extends AppCompatActivity {
         map.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent map=new Intent(Intent.ACTION_VIEW, Uri.parse(""));
+                double latitude = -1.286389; // Example: Nairobi, Kenya
+                double longitude = 36.817223;
+                Intent map = new Intent(Intent.ACTION_VIEW, Uri.parse("geo:" + latitude + "," + longitude + "?q=" + latitude + "," + longitude));
+                map.setPackage("com.google.android.apps.maps");
                 startActivity(map);
 
             }
@@ -55,7 +58,7 @@ public class Register extends AppCompatActivity {
         courses.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent courses=new Intent(Intent.ACTION_VIEW, Uri.parse(""));
+                Intent courses=new Intent(Register.this,OurCourses.class);
                 startActivity(courses);
 
             }

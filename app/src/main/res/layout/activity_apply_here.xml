@@ -5,15 +5,6 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".OurCourses">
+    tools:context=".ApplyHere">
 
-    <ListView
-        android:layout_width="409dp"
-        android:id="@+id/lst"
-        android:layout_height="729dp"
-        android:layout_marginTop="100dp"
-        android:paddingTop="90dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp"
-        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>

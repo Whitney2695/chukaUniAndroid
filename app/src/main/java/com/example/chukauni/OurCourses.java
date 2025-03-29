@@ -1,6 +1,9 @@
 package com.example.chukauni;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -50,8 +53,28 @@ public class OurCourses extends AppCompatActivity {
 
         lstView = (ListView) findViewById(R.id.lst);
 
-        ArrayAdapter<String> adapter=new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,courses);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, courses);
         lstView.setAdapter(adapter);
 
+
+        lstView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                if (position == 0) {
+                    Intent s =new Intent(OurCourses.this, ApplyHere.class);
+                    startActivity(s);
+
+                } else if (position == 1) {
+
+                } else {
+
+                }
+
+
+            }
+        });
     }
-}
+};
+
+

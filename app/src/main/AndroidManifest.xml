@@ -19,6 +19,9 @@
         android:theme="@style/Theme.ChukaUni"
         tools:targetApi="31">
         <activity
+            android:name=".ApplyHere"
+            android:exported="false" />
+        <activity
             android:name=".OurCourses"
             android:exported="false" />
         <activity

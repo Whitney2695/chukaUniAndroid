@@ -1,6 +1,10 @@
 package com.example.chukauni;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,15 +14,59 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class Register extends AppCompatActivity {
 
+    Button map,call,web,courses;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_register);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
+
+        call=(Button)findViewById(R.id.btncall);
+        web=(Button)findViewById(R.id.btnmap);
+        map=(Button)findViewById(R.id.btnmap);
+        courses=(Button)findViewById(R.id.btncourse);
+
+        call.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent call=new Intent(Intent.ACTION_CALL, Uri.parse("tell:+254 758432130"));
+                startActivity(call);
+            }
         });
+
+        web.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent web=new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.chuka.ac.ke/"));
+                startActivity(web);
+            }
+        });
+
+        map.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent map=new Intent(Intent.ACTION_VIEW, Uri.parse(""));
+                startActivity(map);
+
+            }
+        });
+
+        courses.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent courses=new Intent(Intent.ACTION_VIEW, Uri.parse(""));
+                startActivity(courses);
+
+            }
+        });
+
+
+
+//        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+//            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+//            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+//            return insets;
+//        });
     }
 }

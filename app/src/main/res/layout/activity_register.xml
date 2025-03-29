@@ -10,7 +10,7 @@
     tools:context="com.example.chukauni.Register">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnweb"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/web"
@@ -18,7 +18,7 @@
         tools:layout_editor_absoluteY="72dp" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btncall"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/call"
@@ -26,10 +26,19 @@
         tools:layout_editor_absoluteY="172dp" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnmap"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/map"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="288dp" />
+        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteY="172dp" />
+
+    <Button
+        android:id="@+id/btncourse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/courses"
+        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteY="172dp" />
+
 </androidx.appcompat.widget.LinearLayoutCompat>

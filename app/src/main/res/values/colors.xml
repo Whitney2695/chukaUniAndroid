@@ -6,4 +6,8 @@
     <color name="green">#0CE211</color>
     <color name="aqua">#0AF4E9</color>
     <color name="pink">#f15bb5</color>
+    <color name="brown">#ffbe0b</color>
+    <color name="hot">#ffafcc</color>
+    <color name="baby">#bde0fe</color>
+
 </resources>

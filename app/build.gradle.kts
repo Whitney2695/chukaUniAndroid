@@ -34,6 +34,7 @@ android {
 dependencies {
 
     implementation(libs.appcompat)
+    implementation("com.loopj.android:android-async-http:1.4.11")
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)

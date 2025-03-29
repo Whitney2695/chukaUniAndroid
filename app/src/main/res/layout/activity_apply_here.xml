@@ -1,10 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:orientation="vertical"
+    android:background="@color/baby"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ApplyHere">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logo"
+        android:layout_gravity="center"
+        tools:layout_editor_absoluteX="183dp"
+        tools:layout_editor_absoluteY="5dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="443dp"
+        android:layout_height="58dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="@string/form"
+        android:textSize="26sp"
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="219dp" />
+
+    <EditText
+        android:id="@+id/names"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="20dp"
+        android:inputType="text"
+        android:hint="Enter your Name"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="307dp"
+        tools:ignore="InvalidId" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="20dp"
+        android:hint="Enter Your Email"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="399dp" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:ems="10"
+        android:layout_marginTop="20dp"
+        android:inputType="text"
+        android:hint="Enter Phone Number"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="484dp" />
+
+    <EditText
+        android:id="@+id/course"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="20dp"
+        android:inputType="text"
+        android:hint="Enter Course of Interest"
+        tools:layout_editor_absoluteX="12dp"
+        tools:layout_editor_absoluteY="601dp" />
+
+    <LinearLayout
+        android:layout_width="613dp"
+        android:layout_height="364dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="647dp">
+
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="200dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="50px"
+            android:layout_marginEnd="10px"
+            android:hint="Reset" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="200dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="10px"
+            android:layout_marginTop="50px"
+            android:hint="submit" />
+    </LinearLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
